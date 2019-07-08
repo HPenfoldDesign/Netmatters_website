@@ -4,7 +4,7 @@
     height: auto;
     width: 100%;
     margin-top: 2em;
-    background: #333645 url("./../img/branded.png");
+    background: $nm-dark-blue url("./../img/branded.png");
     background-position: right;
     background-repeat: no-repeat;
   }
@@ -23,7 +23,7 @@
     max-width: 50%;
   }
   
-  .desc-box p:nth-of-type(1) {
+  .desc-box p:nth-of-type(1) { //focuses first sentence
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.875rem;

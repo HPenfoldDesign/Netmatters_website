@@ -434,4 +434,56 @@ Below that a similar thing is done on hover for the navigation bar*/
   background-color: #f62459;
   color: #fff; }
 
+.desc-box-background {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  margin-top: 2em;
+  background: #333645 url("./../img/branded.png");
+  background-position: right;
+  background-repeat: no-repeat; }
+
+.desc-box {
+  width: 1200px;
+  margin: auto;
+  color: #fff; }
+
+.desc-box-header {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 30px 0 25px 0;
+  max-width: 50%; }
+
+.desc-box p:nth-of-type(1) {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+  max-width: 50%; }
+
+.desc-box p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+  max-width: 50%; }
+
+.desc-btn {
+  font-size: 1.063rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px 15px;
+  border-radius: 3px;
+  border: none;
+  text-decoration: none;
+  background-color: #fff;
+  color: #333645;
+  margin-bottom: 2em; }
+
+.desc-btn:hover .hover-btn,
+.desc-btn:hover {
+  background-color: #ebebeb; }
+
 /*# sourceMappingURL=styles.css.map */
