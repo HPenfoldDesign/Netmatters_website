@@ -486,4 +486,191 @@ Below that a similar thing is done on hover for the navigation bar*/
 .desc-btn:hover {
   background-color: #ebebeb; }
 
+.latest-bar {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  text-transform: uppercase; }
+
+.latest-title-bar {
+  letter-spacing: -1px;
+  color: #333645;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding: 20px 0;
+  display: inline-block; }
+
+.latest-title-bar:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333645;
+  height: 5px; }
+
+.latest-title-back {
+  position: relative;
+  display: inline-block; }
+
+.news-section {
+  box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2); }
+
+.news-blocks {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  justify-content: space-between; }
+  .news-blocks img {
+    transition: transform 0.2s ease-in;
+    height: auto; }
+
+.news-blocks-inner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  border: 1px solid #c7c3c3;
+  border-radius: 3px;
+  width: 32%;
+  box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative; }
+  .news-blocks-inner > p {
+    color: #666666;
+    letter-spacing: 0.4px;
+    font-size: 1rem;
+    margin: 15px 15px 0px 22px;
+    font-size: 0.9em; }
+
+.news-main-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  object-fit: cover;
+  overflow: hidden;
+  height: auto;
+  object-fit: contain; }
+
+.news-main-images:hover img.scale-img {
+  transform: scale(1.1, 1.1); }
+
+.news-header-one,
+.news-header-two {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  margin: 15px 15px auto 22px; }
+  .news-header-one:hover,
+  .news-header-two:hover {
+    text-decoration: underline; }
+
+.news-header-one {
+  color: #926fb1; }
+
+.news-header-two {
+  color: #2ecc71; }
+
+.box-btn {
+  margin-top: 25px;
+  margin-left: 22px; }
+
+.box-btn-wd:hover {
+  background-color: #7e57a0; }
+
+.box-btn-dm:hover {
+  background-color: #2ab162; }
+
+.news-section hr {
+  width: 88%;
+  margin-bottom: 25px; }
+
+.news-thumbnail {
+  margin-left: 22px;
+  border-radius: 50%;
+  display: inline;
+  margin-right: 22px; }
+
+.news-posted-by {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 1.3em; }
+  .news-posted-by p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    color: #666;
+    font-size: 0.9em; }
+
+.news-block-credits {
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px; }
+
+.tool-tip {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0 10px;
+  line-height: 1.438rem;
+  text-transform: uppercase;
+  z-index: 1;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase; }
+  .tool-tip:hover {
+    text-decoration: underline; }
+
+.tool-tip-one {
+  background-color: #926fb1; }
+
+.tool-tip-two {
+  background-color: #2ecc71; }
+
+.tool-tip-card-1,
+.tool-tip-card-2,
+.tool-tip-card-3 {
+  position: absolute;
+  color: #fff;
+  font-size: 1em;
+  visibility: hidden;
+  bottom: 180%;
+  right: 0;
+  width: 203px;
+  background-color: #333645;
+  font-weight: 400;
+  text-transform: none;
+  border-radius: 3px;
+  padding: 10px; }
+
+.tool-tip-card-arrow {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #333645;
+  bottom: -5px;
+  right: 10px;
+  transform: rotate(45deg); }
+
+.tool-tip-card-1 {
+  width: 195px; }
+
+.tool-tip-card-2 {
+  width: 140px; }
+
+.tool-tip:hover .tool-tip-card-1,
+.tool-tip:hover .tool-tip-card-2,
+.tool-tip:hover .tool-tip-card-3 {
+  visibility: visible; }
+
 /*# sourceMappingURL=styles.css.map */

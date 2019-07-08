@@ -12,7 +12,7 @@
   .desc-box {
     width: 1200px;
     margin: auto;
-    color: #fff;
+    color: $white;
   }
   
   .desc-box-header {
@@ -47,8 +47,8 @@
     border-radius: 3px;
     border: none;
     text-decoration: none;
-    background-color: #fff;
-    color: #333645;
+    background-color: $white;
+    color: $nm-dark-blue;
     margin-bottom: 2em;
   }
   
