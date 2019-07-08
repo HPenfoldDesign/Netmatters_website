@@ -1,0 +1,437 @@
+body {
+  font-family: "poppins", sans-serif; }
+
+header {
+  background-color: #fff; }
+
+.head-container {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+  justify-content: space-between; }
+  .head-container .head-btn-all {
+    display: flex; }
+
+.head-btns {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  padding: 20px 15px;
+  border-radius: 3px;
+  border: none;
+  text-decoration: none; }
+
+.head-icons {
+  padding-right: 10px;
+  font-size: 1em; }
+
+.head-btn-support {
+  background-color: #4183d7;
+  color: #fff;
+  margin-right: 20px; }
+  .head-btn-support:hover {
+    background-color: #2a6ec6;
+    color: #fff; }
+  .head-btn-support:active {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2); }
+
+.head-btn-contact {
+  background-color: #999aa2;
+  color: #fff;
+  margin-right: 20px; }
+  .head-btn-contact:hover {
+    background-color: #84858f;
+    color: #fff; }
+  .head-btn-contact:active {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2); }
+
+.ham-menu-box {
+  background-color: #333645;
+  border: none;
+  border-radius: 3px;
+  height: 60px;
+  width: 60px; }
+  .ham-menu-box .hamburger-icon {
+    font-size: 2rem;
+    color: #fff; }
+  .ham-menu-box .menu-text {
+    margin: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    padding-top: 5px; }
+
+.nav-background {
+  background-color: #333645;
+  border-bottom: 0.5px ridge #525252; }
+
+.nav-container > ul {
+  display: flex;
+  background-color: #333645;
+  margin: auto;
+  list-style-type: none;
+  width: 1200px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 0;
+  position: relative; }
+  .nav-container > ul a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 0px;
+    justify-content: center;
+    align-items: center; }
+  .nav-container > ul i {
+    font-size: 1.438rem;
+    padding-bottom: 5px; }
+  .nav-container > ul p {
+    margin: 0;
+    font-size: 1.125rem; }
+  .nav-container > ul small {
+    font-size: 0.7rem; }
+
+.nav-container a:hover .icon {
+  color: #fff; }
+
+/*This loops through the icon classes and ads the icon colours, 
+.nav-icon + class = the full name of the class in the html.
+Below that a similar thing is done on hover for the navigation bar*/
+.nav-icon-wd {
+  color: #926fb1; }
+
+.wd:hover {
+  background-color: #926fb1; }
+
+.nav-icon-is {
+  color: #4183d7; }
+
+.is:hover {
+  background-color: #4183d7; }
+
+.nav-icon-ts {
+  color: #d64541; }
+
+.ts:hover {
+  background-color: #d64541; }
+
+.nav-icon-bs {
+  color: #67809f; }
+
+.bs:hover {
+  background-color: #67809f; }
+
+.nav-icon-dm {
+  color: #2ecc71; }
+
+.dm:hover {
+  background-color: #2ecc71; }
+
+.nav-icon-cs {
+  color: #f62459; }
+
+.cs:hover {
+  background-color: #f62459; }
+
+.nav-links {
+  border-left: 0.5px ridge #525252;
+  border-right: 0.5px ridge #525252; }
+
+.sub-menu li,
+.sub-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff; }
+
+.wd .sub-menu {
+  background-color: #79539a; }
+
+.is .sub-menu {
+  background-color: #286abd; }
+
+.ts .sub-menu {
+  background-color: #bc2c28; }
+
+.bs .sub-menu {
+  background-color: #526781; }
+
+.dm .sub-menu {
+  background-color: #25a25a; }
+
+.cs .sub-menu {
+  background-color: #de093f; }
+
+.sub-menu {
+  position: absolute;
+  visibility: hidden;
+  text-align: left;
+  width: 100%;
+  font-size: 15px;
+  display: flex;
+  list-style-type: none;
+  left: 0;
+  padding: 0; }
+  .sub-menu::before {
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    height: 47px;
+    right: 100%;
+    width: 2000px; }
+  .sub-menu::after {
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    height: 47px;
+    left: 100%;
+    width: 2000px; }
+
+.nav-and-subnav {
+  flex: 1; }
+
+.nav-and-subnav:hover .sub-menu {
+  visibility: visible; }
+
+.img-carousel {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 200.04px);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.71), 80%, transparent), url("./../img/home-rRnH.jpg");
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.car-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0 0 25px; }
+
+.car-para {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  padding: 0 0 35px;
+  max-width: 400px; }
+
+.title-button {
+  font-size: 1.063rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px 15px;
+  border-radius: 3px;
+  border: none;
+  text-decoration: none;
+  background-color: #926fb1;
+  color: #fff; }
+  .title-button:hover {
+    background-color: #7e57a0; }
+  .title-button:active {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2); }
+
+.title-icon {
+  padding-left: 20px; }
+
+.car-all-elements {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 1200px;
+  align-items: flex-start; }
+
+.info-box {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.wd-info-box,
+.is-info-box {
+  margin-top: 50px;
+  margin-bottom: 36px;
+  max-width: calc(50% - 20px);
+  text-decoration: none;
+  border: 1px solid #c7c3c3;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
+  background-color: #fff; }
+
+.ts-info-box,
+.bs-info-box,
+.dm-info-box,
+.cs-info-box {
+  text-decoration: none;
+  border: 1px solid #c7c3c3;
+  text-align: center;
+  max-width: calc(25% - 30px);
+  border-radius: 3px;
+  box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
+  background-color: #fff; }
+
+.box-title {
+  font-size: 1.125rem;
+  color: #000; }
+
+.p-info-box {
+  display: flex;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  color: #000;
+  margin-bottom: 15px;
+  justify-content: center;
+  padding: 0 20px; }
+
+.box-btn {
+  color: #fff;
+  padding: 15px 15px;
+  margin: 15px auto 20px auto;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-decoration: none; }
+
+.box-hr {
+  width: 5%;
+  height: 3px;
+  background-color: #3b3b3b;
+  margin: 15px auto 15px auto;
+  border: none; }
+
+.box-icon {
+  font-size: 20px;
+  margin: 30px auto 15px;
+  padding: 20px;
+  border-radius: 50%;
+  color: #fff; }
+
+.box-icon-wd {
+  background-color: #926fb1; }
+
+.box-icon-is {
+  background-color: #4183d7; }
+
+.box-icon-ts {
+  background-color: #d64541; }
+
+.box-icon-bs {
+  background-color: #67809f; }
+
+.box-icon-dm {
+  background-color: #2ecc71; }
+
+.box-icon-cs {
+  background-color: #f62459; }
+
+.box-btn-wd {
+  background-color: #926fb1; }
+
+.box-btn-is {
+  background-color: #4183d7; }
+
+.box-btn-ts {
+  background-color: #d64541; }
+
+.box-btn-bs {
+  background-color: #67809f; }
+
+.box-btn-dm {
+  background-color: #2ecc71; }
+
+.box-btn-cs {
+  background-color: #f62459; }
+
+/*------information-boxes-hover------*/
+.wd-info-box:hover {
+  background-color: #926fb1; }
+
+.wd-info-box:hover .box-hr,
+.wd-info-box:hover .box-btn-wd,
+.wd-info-box:hover .box-icon-wd {
+  background: #fff;
+  color: #926fb1; }
+
+.wd-info-box:hover .box-title,
+.wd-info-box:hover .p-info-box {
+  background-color: #926fb1;
+  color: #fff; }
+
+.is-info-box:hover {
+  background-color: #4183d7; }
+
+.is-info-box:hover .box-hr,
+.is-info-box:hover .box-btn-is,
+.is-info-box:hover .box-icon-is {
+  background: #fff;
+  color: #4183d7; }
+
+.is-info-box:hover .box-title,
+.is-info-box:hover .p-info-box {
+  background-color: #4183d7;
+  color: #fff; }
+
+.ts-info-box:hover {
+  background-color: #d64541; }
+
+.ts-info-box:hover .box-hr,
+.ts-info-box:hover .box-btn-ts,
+.ts-info-box:hover .box-icon-ts {
+  background: #fff;
+  color: #d64541; }
+
+.ts-info-box:hover .box-title,
+.ts-info-box:hover .p-info-box {
+  background-color: #d64541;
+  color: #fff; }
+
+.bs-info-box:hover {
+  background-color: #67809f; }
+
+.bs-info-box:hover .box-hr,
+.bs-info-box:hover .box-btn-bs,
+.bs-info-box:hover .box-icon-bs {
+  background: #fff;
+  color: #67809f; }
+
+.bs-info-box:hover .box-title,
+.bs-info-box:hover .p-info-box {
+  background-color: #67809f;
+  color: #fff; }
+
+.dm-info-box:hover {
+  background-color: #2ecc71; }
+
+.dm-info-box:hover .box-hr,
+.dm-info-box:hover .box-btn-dm,
+.dm-info-box:hover .box-icon-dm {
+  background: #fff;
+  color: #2ecc71; }
+
+.dm-info-box:hover .box-title,
+.dm-info-box:hover .p-info-box {
+  background-color: #2ecc71;
+  color: #fff; }
+
+.cs-info-box:hover {
+  background-color: #f62459; }
+
+.cs-info-box:hover .box-hr,
+.cs-info-box:hover .box-btn-cs,
+.cs-info-box:hover .box-icon-cs {
+  background: #fff;
+  color: #f62459; }
+
+.cs-info-box:hover .box-title,
+.cs-info-box:hover .p-info-box {
+  background-color: #f62459;
+  color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */

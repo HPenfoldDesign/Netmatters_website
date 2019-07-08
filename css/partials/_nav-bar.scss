@@ -1,0 +1,70 @@
+ .nav-background {
+    background-color: $nm-dark-blue;
+    border-bottom: 0.5px ridge $border-grey;
+   }
+  
+ .nav-container > ul {
+    display: flex;
+    background-color: $nm-dark-blue;
+    margin: auto;
+    list-style-type: none;
+    width: 1200px;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    a {
+        display: flex;
+        text-decoration: none;
+        color: $white;
+        padding: 15px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    i {
+        font-size: 1.438rem;
+        padding-bottom: 5px;
+      }
+    p {
+        margin: 0;
+        font-size: 1.125rem;
+      }
+    small {
+        font-size: 0.7rem;
+      }  
+  }
+  
+ .nav-container a:hover .icon {
+    color: $white;
+  }
+
+/*This loops through the icon classes and ads the icon colours, 
+.nav-icon + #{class} = the full name of the class in the html.
+Below that a similar thing is done on hover for the navigation bar*/
+
+$nav-icons: (   
+    wd: $purple,
+    is: $light-blue,
+    ts: $light-red,
+    bs: $pale-blue,
+    dm: $light-green,
+    cs: $pink,
+);
+
+@each $class, $color in $nav-icons {
+    .nav-icon-#{$class} {
+        color: $color;
+    }
+    .#{$class}:hover {
+        background-color: $color;
+    }
+}
+
+.nav-links {
+    border-left: 0.5px ridge $border-grey;
+    border-right: 0.5px ridge $border-grey;
+  }
+  
+
+  

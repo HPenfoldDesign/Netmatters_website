@@ -1,0 +1,57 @@
+.img-carousel {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 200.04px);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.71), 80%, transparent),
+      url("./../img/home-rRnH.jpg");
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .car-title {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 0 0 25px;
+  }
+  
+  .car-para {
+    color: $white;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding: 0 0 35px;
+    max-width: 400px;
+  }
+  
+  .title-button {
+    font-size: 1.063rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px 15px;
+    border-radius: 3px;
+    border: none;
+    text-decoration: none;
+    background-color:$purple;
+    color: $white;
+    &:hover {
+      background-color: $dark-purple;
+    }
+    &:active {
+      box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .title-icon {
+    padding-left: 20px;
+  }
+  
+  .car-all-elements {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1200px;
+    align-items: flex-start;
+  }

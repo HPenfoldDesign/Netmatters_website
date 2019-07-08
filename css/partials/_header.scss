@@ -1,0 +1,84 @@
+body {
+    font-family: "poppins", sans-serif;
+  }
+ 
+//-----------Header and header buttons------------------- 
+ 
+  header {
+    background-color: $white;
+  }
+  
+  .head-container {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    .head-btn-all {
+        display: flex;
+      }  
+    }
+
+  .head-btns {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    border-radius: 3px;
+    border: none;
+    text-decoration: none;
+  }
+  
+  .head-icons {
+    padding-right: 10px;
+    font-size: 1em;
+  }
+  
+  .head-btn-support {
+    background-color: $light-blue;
+    color: $white;
+    margin-right: 20px;
+    &:hover {
+        background-color: $dark-blue;
+        color: $white;
+    }
+    &:active{
+        box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .head-btn-contact {
+    background-color: $light-grey;
+    color: $white;
+    margin-right: 20px;
+    &:hover {
+        background-color: $dark-grey;
+        color: $white;
+    }
+    &:active {
+        box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  //---------Hamburger Menu-----------------------------
+  
+    .ham-menu-box {
+        background-color: $nm-dark-blue;
+        border: none;
+        border-radius: 3px;
+        height: 60px;
+        width: 60px;
+        .hamburger-icon {
+        font-size: 2rem;
+        color: $white;
+        } 
+        .menu-text {
+        margin: 0;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-family: "poppins", sans-serif;
+        font-weight: 400;
+        padding-top: 5px;
+        }
+    }

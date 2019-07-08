@@ -1,0 +1,210 @@
+.info-box {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .wd-info-box,
+  .is-info-box {  
+    margin-top:50px; 
+    margin-bottom: 36px; 
+    max-width:calc(50% - 20px);
+    text-decoration: none;
+    border: 1px solid #c7c3c3;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
+    background-color: #fff;  
+  }
+
+  .ts-info-box,
+  .bs-info-box,
+  .dm-info-box,
+  .cs-info-box {
+    text-decoration: none;
+    border: 1px solid #c7c3c3;
+    text-align: center;
+    max-width:calc(25% - 30px);
+    border-radius: 3px;
+    box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .box-title {
+    font-size: 1.125rem;
+    color: #000;
+  }
+
+  .p-info-box {
+    display: flex;
+    font-size: 0.8125rem;
+    line-height: 1.375rem;
+    color: #000;
+    margin-bottom: 15px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  .box-btn {
+    color: #fff;
+    padding: 15px 15px;
+    margin: 15px auto 20px auto;
+    display: inline-block;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  
+  .box-hr {
+    width: 5%;
+    height: 3px;
+    background-color: #3b3b3b;
+    margin: 15px auto 15px auto;
+    border: none;
+  }
+  
+  .box-icon {
+    font-size: 20px;
+    margin: 30px auto 15px;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+$box-icons: (   
+    wd: $purple,
+    is: $light-blue,
+    ts: $light-red,
+    bs: $pale-blue,
+    dm: $light-green,
+    cs: $pink,
+);
+
+@each $class, $color in $box-icons {
+    .box-icon-#{$class} {
+        background-color: $color;
+    }
+}
+
+$box-btns: (   
+    wd: $purple,
+    is: $light-blue,
+    ts: $light-red,
+    bs: $pale-blue,
+    dm: $light-green,
+    cs: $pink,
+);
+
+@each $class, $color in $box-btns {
+    .box-btn-#{$class} {
+        background-color: $color;
+    }
+}
+
+  
+  /*------information-boxes-hover------*/
+  
+  .wd-info-box:hover {
+    background-color: #926fb1;
+  }
+  
+  .wd-info-box:hover .box-hr,
+  .wd-info-box:hover .box-btn-wd,
+  .wd-info-box:hover .box-icon-wd {
+    background: #fff;
+    color: #926fb1;
+  }
+  
+  .wd-info-box:hover .box-title,
+  .wd-info-box:hover .p-info-box {
+    background-color: #926fb1;
+    color: #fff;
+  }
+  
+  .is-info-box:hover {
+    background-color: #4183d7;
+  }
+  
+  .is-info-box:hover .box-hr,
+  .is-info-box:hover .box-btn-is,
+  .is-info-box:hover .box-icon-is {
+    background: #fff;
+    color: #4183d7;
+  }
+  
+  .is-info-box:hover .box-title,
+  .is-info-box:hover .p-info-box {
+    background-color: #4183d7;
+    color: #fff;
+  }
+  
+  .ts-info-box:hover {
+    background-color: #d64541;
+  }
+  
+  .ts-info-box:hover .box-hr,
+  .ts-info-box:hover .box-btn-ts,
+  .ts-info-box:hover .box-icon-ts {
+    background: #fff;
+    color: #d64541;
+  }
+  
+  .ts-info-box:hover .box-title,
+  .ts-info-box:hover .p-info-box {
+    background-color: #d64541;
+    color: #fff;
+  }
+  
+  .bs-info-box:hover {
+    background-color: #67809f;
+  }
+  
+  .bs-info-box:hover .box-hr,
+  .bs-info-box:hover .box-btn-bs,
+  .bs-info-box:hover .box-icon-bs {
+    background: #fff;
+    color: #67809f;
+  }
+  
+  .bs-info-box:hover .box-title,
+  .bs-info-box:hover .p-info-box {
+    background-color: #67809f;
+    color: #fff;
+  }
+  
+  .dm-info-box:hover {
+    background-color: #2ecc71;
+  }
+  
+  .dm-info-box:hover .box-hr,
+  .dm-info-box:hover .box-btn-dm,
+  .dm-info-box:hover .box-icon-dm {
+    background: #fff;
+    color: #2ecc71;
+  }
+  
+  .dm-info-box:hover .box-title,
+  .dm-info-box:hover .p-info-box {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .cs-info-box:hover {
+    background-color: #f62459;
+  }
+  
+  .cs-info-box:hover .box-hr,
+  .cs-info-box:hover .box-btn-cs,
+  .cs-info-box:hover .box-icon-cs {
+    background: #fff;
+    color: #f62459;
+  }
+  
+  .cs-info-box:hover .box-title,
+  .cs-info-box:hover .p-info-box {
+    background-color: #f62459;
+    color: #fff;
+  }
