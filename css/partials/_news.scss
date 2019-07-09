@@ -143,11 +143,7 @@
   background-color: $light-green;
 }
 
-//----------------carry on here------------
-
-.tool-tip-card-1,
-.tool-tip-card-2,
-.tool-tip-card-3 {
+.tool-tip-card {
   position: absolute;
   color: #fff;
   font-size: 1em;
@@ -172,16 +168,14 @@
   transform: rotate(45deg);
 }
 
-.tool-tip-card-1 {
+.card-1 {
   width: 195px;
 }
 
-.tool-tip-card-2 {
+.card-2 {
   width: 140px;
 }
 
-.tool-tip:hover .tool-tip-card-1,
-.tool-tip:hover .tool-tip-card-2,
-.tool-tip:hover .tool-tip-card-3 {
+.tool-tip:hover .tool-tip-card {
   visibility: visible;
 }

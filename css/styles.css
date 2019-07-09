@@ -637,9 +637,7 @@ Below that a similar thing is done on hover for the navigation bar*/
 .tool-tip-two {
   background-color: #2ecc71; }
 
-.tool-tip-card-1,
-.tool-tip-card-2,
-.tool-tip-card-3 {
+.tool-tip-card {
   position: absolute;
   color: #fff;
   font-size: 1em;
@@ -662,15 +660,70 @@ Below that a similar thing is done on hover for the navigation bar*/
   right: 10px;
   transform: rotate(45deg); }
 
-.tool-tip-card-1 {
+.card-1 {
   width: 195px; }
 
-.tool-tip-card-2 {
+.card-2 {
   width: 140px; }
 
-.tool-tip:hover .tool-tip-card-1,
-.tool-tip:hover .tool-tip-card-2,
-.tool-tip:hover .tool-tip-card-3 {
+.tool-tip:hover .tool-tip-card {
+  visibility: visible; }
+
+.portfolio-brands {
+  box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2); }
+
+.brand-hover {
+  position: relative; }
+
+.clr-brands {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  justify-content: space-around; }
+  .clr-brands img {
+    filter: grayscale(100%); }
+    .clr-brands img:hover {
+      filter: grayscale(0); }
+
+.hover-tool-tip {
+  text-align: center;
+  position: absolute;
+  background-color: #333645;
+  color: #fff;
+  padding: 5px;
+  max-width: 200px;
+  min-width: 200px;
+  bottom: 100px;
+  left: calc(50% - 100px);
+  visibility: hidden; }
+
+.tool-tip-title {
+  font-size: 1.125rem;
+  font-weight: 300;
+  justify-content: center; }
+
+.tool-tip-para {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  font-weight: 300; }
+
+.brand-hr {
+  background-color: #fff;
+  width: 9%; }
+
+.tool-tip-arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #333645;
+  bottom: -15px;
+  transform: rotate(45deg);
+  left: 75px;
+  z-index: -1; }
+
+.brand-hover:hover .hover-tool-tip {
   visibility: visible; }
 
 /*# sourceMappingURL=styles.css.map */
