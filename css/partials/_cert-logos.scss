@@ -1,0 +1,17 @@
+.cert-logo-box {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    justify-content: space-around;
+    margin: auto;
+    padding: 50px 0px 30px;
+  }
+  
+  .bw-to-clr {
+    filter: grayscale(100%);
+    &:hover {
+        filter: none;
+     }
+   }
+  
+  
