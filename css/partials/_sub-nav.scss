@@ -43,15 +43,16 @@ $nav-and-subnav: (
     position: absolute;
     background-color: inherit;
     height: 47px;
-    left: 100%;
-    width: 2000px; 
+    left: 100%; 
+    width: 2000px;
   } 
 }
+
 
 .nav-and-subnav {
   flex: 1;
 }
 
 .nav-and-subnav:hover .sub-menu {
-  visibility: visible;
+  visibility: visible;  
 }
