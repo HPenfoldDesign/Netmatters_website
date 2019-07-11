@@ -273,6 +273,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   @media (max-width: 1200px) {
     .info-box {
       width: 975px; } }
+  @media (max-width: 992px) {
+    .info-box {
+      width: 955px; } }
 
 .wd-info-box,
 .is-info-box {
@@ -484,6 +487,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   @media (max-width: 1200px) {
     .desc-box {
       width: 975px; } }
+  @media (max-width: 992px) {
+    .desc-box {
+      width: 955px; } }
 
 .desc-box-header {
   text-transform: uppercase;
@@ -498,6 +504,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   line-height: 1.875rem;
   margin-bottom: 25px;
   max-width: 50%; }
+  @media (max-width: 992px) {
+    .desc-box p:nth-of-type(1) {
+      max-width: 100%; } }
 
 .desc-box p {
   font-weight: 400;
@@ -505,6 +514,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   line-height: 1.875rem;
   margin-bottom: 25px;
   max-width: 50%; }
+  @media (max-width: 992px) {
+    .desc-box p {
+      max-width: 100%; } }
 
 .desc-btn {
   font-size: 1.063rem;
@@ -531,6 +543,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   @media (max-width: 1200px) {
     .latest-bar {
       width: 975px; } }
+  @media (max-width: 992px) {
+    .latest-bar {
+      width: 955px; } }
 
 .latest-title-bar {
   letter-spacing: -1px;
@@ -570,6 +585,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   @media (max-width: 1200px) {
     .news-blocks {
       width: 975px; } }
+  @media (max-width: 992px) {
+    .news-blocks {
+      width: 955px; } }
 
 .news-blocks-inner {
   display: flex;
@@ -808,6 +826,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   @media (max-width: 1200px) {
     .footer-content {
       width: 975px; } }
+  @media (max-width: 992px) {
+    .footer-content {
+      width: 955px; } }
 
 @media (max-width: 1200px) {
   .footer-cu,
@@ -865,6 +886,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   @media (max-width: 1200px) {
     .cert-logo-box {
       width: 975px; } }
+  @media (max-width: 992px) {
+    .cert-logo-box {
+      width: 955px; } }
 
 .bw-to-clr {
   filter: grayscale(100%); }

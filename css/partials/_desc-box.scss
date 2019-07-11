@@ -16,6 +16,9 @@
     @include respond(desktop) {
       width: 975px;
     }  
+    @include respond(tab-lan) {
+      width: 955px;
+    } 
   }
   
   .desc-box-header {
@@ -32,6 +35,9 @@
     line-height: 1.875rem;
     margin-bottom: 25px;
     max-width: 50%;
+    @include respond(tab-lan) {
+      max-width: 100%;
+    } 
   }
   
   .desc-box p {
@@ -40,6 +46,9 @@
     line-height: 1.875rem;
     margin-bottom: 25px;
     max-width: 50%;
+    @include respond(tab-lan) {
+      max-width: 100%;
+    } 
   }
   
   .desc-btn {

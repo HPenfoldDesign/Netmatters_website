@@ -18,6 +18,9 @@
     @include respond(desktop) {
       width: 975px;
     }  
+    @include respond(tab-lan) {
+      width: 955px;
+    }
   }
 
 .news-blocks-inner {

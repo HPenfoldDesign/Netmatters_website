@@ -7,6 +7,9 @@
     @include respond(desktop) {
       width: 975px;
     }  
+    @include respond(tab-lan) {
+      width: 955px;
+    } 
   }
   
   .wd-info-box,
@@ -42,7 +45,7 @@
   .bs-info-box {
     @include respond(desktop) {
       margin-bottom: 36px;
-    }  
+    } 
   }
   
   .box-title {
