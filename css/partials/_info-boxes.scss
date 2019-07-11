@@ -4,6 +4,9 @@
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include respond(desktop) {
+      width: 975px;
+    }  
   }
   
   .wd-info-box,
@@ -29,7 +32,17 @@
     max-width:calc(25% - 30px);
     border-radius: 3px;
     box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #fff; 
+    @include respond(desktop) {
+      max-width:calc(50% - 20px);
+    }  
+  }
+  
+  .ts-info-box,
+  .bs-info-box {
+    @include respond(desktop) {
+      margin-bottom: 36px;
+    }  
   }
   
   .box-title {

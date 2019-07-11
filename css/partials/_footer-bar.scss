@@ -27,8 +27,26 @@
             color: $white;
             text-decoration: underline;
         }
+      } 
+      @include respond(desktop) {
+        width: 975px;
       }  
+  }
+
+  .footer-cu, 
+  .footer-an, 
+  .footer-web, 
+  .footer-sm {
+    @include respond(desktop) {
+    width: 50%; 
     }
+  } 
+
+  .in-footer {
+    @include respond(desktop) {
+      margin-bottom: 25px;
+    } 
+  }
   
   /*------footer-social media------*/
   

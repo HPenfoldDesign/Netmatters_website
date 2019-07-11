@@ -17,8 +17,14 @@
         filter: grayscale(100%);
         &:hover {
             filter: grayscale(0);
+            @include respond(desktop) {
+              width: 100%;
+            }  
         }      
-      }
+      } 
+      @include respond(desktop) {
+        width: 975px;
+      }  
     }
   
   .hover-tool-tip {

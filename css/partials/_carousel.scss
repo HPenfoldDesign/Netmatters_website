@@ -54,4 +54,10 @@
     margin: auto;
     width: 1200px;
     align-items: flex-start;
+    @include respond(desktop) {
+      width: 975px;
+    } 
+    @include respond(tab-lan) {
+      width: 955px;
+    }   
   }

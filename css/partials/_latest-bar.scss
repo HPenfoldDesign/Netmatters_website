@@ -4,6 +4,9 @@
     margin: auto;
     background-color: #fff;
     text-transform: uppercase;
+    @include respond(desktop) {
+      width: 975px;
+    }  
   }
   
   .latest-title-bar {

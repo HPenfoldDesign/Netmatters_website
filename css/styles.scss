@@ -1,4 +1,6 @@
-@import 'partials/variables',
+@import'partials/media-queries';
+
+@import'partials/variables',
         'partials/header',
         'partials/nav-bar',
         'partials/sub-nav',
@@ -9,6 +11,6 @@
         'partials/news',
         'partials/port-brands',
         'partials/footer-bar', 
-        'partials/cert-logos',
-        'partials/media-queries';
+        'partials/cert-logos';
+        
     

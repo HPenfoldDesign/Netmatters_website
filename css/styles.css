@@ -14,6 +14,13 @@ header {
   justify-content: space-between; }
   .head-container .head-btn-all {
     display: flex; }
+  @media (max-width: 1200px) {
+    .head-container {
+      width: 975px;
+      justify-content: space-between; } }
+  @media (max-width: 992px) {
+    .head-container {
+      width: 955px; } }
 
 .head-btns {
   font-size: 1.125rem;
@@ -94,6 +101,12 @@ header {
     font-size: 1.125rem; }
   .nav-container > ul small {
     font-size: 0.7rem; }
+  @media (max-width: 1200px) {
+    .nav-container > ul {
+      width: 975px; } }
+  @media (max-width: 992px) {
+    .nav-container > ul {
+      width: 955px; } }
 
 .nav-container a:hover .icon {
   color: #fff; }
@@ -180,15 +193,15 @@ Below that a similar thing is done on hover for the navigation bar*/
     position: absolute;
     background-color: inherit;
     height: 47px;
-    right: 100%;
-    width: 2000px; }
+    left: 100%;
+    width: 29.3%; }
   .sub-menu::after {
     content: "";
     position: absolute;
     background-color: inherit;
     height: 47px;
-    left: 100%;
-    width: 2000px; }
+    right: 100%;
+    width: 100%; }
 
 .nav-and-subnav {
   flex: 1; }
@@ -244,6 +257,12 @@ Below that a similar thing is done on hover for the navigation bar*/
   margin: auto;
   width: 1200px;
   align-items: flex-start; }
+  @media (max-width: 1200px) {
+    .car-all-elements {
+      width: 975px; } }
+  @media (max-width: 992px) {
+    .car-all-elements {
+      width: 955px; } }
 
 .info-box {
   display: flex;
@@ -251,6 +270,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-between; }
+  @media (max-width: 1200px) {
+    .info-box {
+      width: 975px; } }
 
 .wd-info-box,
 .is-info-box {
@@ -275,6 +297,17 @@ Below that a similar thing is done on hover for the navigation bar*/
   border-radius: 3px;
   box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
   background-color: #fff; }
+  @media (max-width: 1200px) {
+    .ts-info-box,
+    .bs-info-box,
+    .dm-info-box,
+    .cs-info-box {
+      max-width: calc(50% - 20px); } }
+
+@media (max-width: 1200px) {
+  .ts-info-box,
+  .bs-info-box {
+    margin-bottom: 36px; } }
 
 .box-title {
   font-size: 1.125rem;
@@ -448,6 +481,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   width: 1200px;
   margin: auto;
   color: #fff; }
+  @media (max-width: 1200px) {
+    .desc-box {
+      width: 975px; } }
 
 .desc-box-header {
   text-transform: uppercase;
@@ -492,6 +528,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   margin: auto;
   background-color: #fff;
   text-transform: uppercase; }
+  @media (max-width: 1200px) {
+    .latest-bar {
+      width: 975px; } }
 
 .latest-title-bar {
   letter-spacing: -1px;
@@ -525,6 +564,12 @@ Below that a similar thing is done on hover for the navigation bar*/
   .news-blocks img {
     transition: transform 0.2s ease-in;
     height: auto; }
+  @media (max-width: 1200px) {
+    .news-blocks .news-blocks-inner:last-of-type {
+      display: none; } }
+  @media (max-width: 1200px) {
+    .news-blocks {
+      width: 975px; } }
 
 .news-blocks-inner {
   display: flex;
@@ -544,6 +589,9 @@ Below that a similar thing is done on hover for the navigation bar*/
     font-size: 1rem;
     margin: 15px 15px 0px 22px;
     font-size: 0.9em; }
+  @media (max-width: 1200px) {
+    .news-blocks-inner {
+      width: calc(50% - 20px); } }
 
 .news-main-images {
   display: flex;
@@ -686,6 +734,12 @@ Below that a similar thing is done on hover for the navigation bar*/
     filter: grayscale(100%); }
     .clr-brands img:hover {
       filter: grayscale(0); }
+      @media (max-width: 1200px) {
+        .clr-brands img:hover {
+          width: 100%; } }
+  @media (max-width: 1200px) {
+    .clr-brands {
+      width: 975px; } }
 
 .hover-tool-tip {
   text-align: center;
@@ -751,6 +805,20 @@ Below that a similar thing is done on hover for the navigation bar*/
     .footer-content a:hover {
       color: #fff;
       text-decoration: underline; }
+  @media (max-width: 1200px) {
+    .footer-content {
+      width: 975px; } }
+
+@media (max-width: 1200px) {
+  .footer-cu,
+  .footer-an,
+  .footer-web,
+  .footer-sm {
+    width: 50%; } }
+
+@media (max-width: 1200px) {
+  .in-footer {
+    margin-bottom: 25px; } }
 
 /*------footer-social media------*/
 .sm-footer {
@@ -794,6 +862,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   justify-content: space-around;
   margin: auto;
   padding: 50px 0px 30px; }
+  @media (max-width: 1200px) {
+    .cert-logo-box {
+      width: 975px; } }
 
 .bw-to-clr {
   filter: grayscale(100%); }

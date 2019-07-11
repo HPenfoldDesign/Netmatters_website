@@ -32,7 +32,13 @@
       }
     small {
         font-size: 0.7rem;
-      }  
+      }   
+    @include respond(desktop) {
+      width: 975px;
+    }
+    @include respond(tab-lan) {
+      width: 955px;
+    }    
   }
   
  .nav-container a:hover .icon {

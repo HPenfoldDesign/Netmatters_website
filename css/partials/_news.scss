@@ -9,8 +9,15 @@
     justify-content: space-between; 
     img {
         transition: transform 0.2s ease-in;
-        height: auto;
-      }
+        height: auto; 
+    }
+    .news-blocks-inner:last-of-type {
+        @include respond(desktop) {  
+        display: none; }
+    }   
+    @include respond(desktop) {
+      width: 975px;
+    }  
   }
 
 .news-blocks-inner {
@@ -31,7 +38,10 @@
         font-size: 1rem;
         margin: 15px 15px 0px 22px;
         font-size: 0.9em;
-      }
+      }    
+      @include respond(desktop) {
+        width:calc(50% - 20px);
+      }  
     }
 
 .news-main-images {

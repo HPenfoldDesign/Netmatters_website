@@ -19,7 +19,14 @@ body {
     .head-btn-all {
         display: flex;
       }  
-    }
+    @include respond(desktop) {
+        width: 975px; 
+        justify-content: space-between;
+    }   
+    @include respond(tab-lan) {
+      width: 955px;
+    }  
+  }
 
   .head-btns {
     font-size: 1.125rem;

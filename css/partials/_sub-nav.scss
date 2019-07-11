@@ -35,16 +35,16 @@ $nav-and-subnav: (
     position: absolute;
     background-color: inherit;
     height: 47px;
-    right: 100%;
-    width: 2000px;  
+    left: 100%; //temp fix
+    width: 29.3%;  //temp fix from ross
   }  
   &::after {
     content: "";
     position: absolute;
     background-color: inherit;
     height: 47px;
-    left: 100%; 
-    width: 2000px;
+    right: 100%; //temp fix
+    width: 100%; //temp fix
   } 
 }
 

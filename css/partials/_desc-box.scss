@@ -12,7 +12,10 @@
   .desc-box {
     width: 1200px;
     margin: auto;
-    color: $white;
+    color: $white; 
+    @include respond(desktop) {
+      width: 975px;
+    }  
   }
   
   .desc-box-header {
