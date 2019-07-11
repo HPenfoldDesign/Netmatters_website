@@ -4,6 +4,18 @@
     margin: auto;
     background-color: $white;
     text-transform: uppercase;
+    }
+    @include respond(desktop) {
+      width: 975px; 
+      justify-content: space-between;
+    }   
+    @include respond(tab-lan) {
+    width: 955px;
+    }  
+    @include respond(tab-port) {
+    width: 730px;
+    }
+}  
   }
   
   .latest-title-bar {

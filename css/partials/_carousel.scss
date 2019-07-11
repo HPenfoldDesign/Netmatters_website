@@ -16,6 +16,9 @@
     font-weight: 400;
     font-size: 3rem;
     margin: 0 0 25px;
+    @include respond(tab-port) {
+      margin: auto;
+    }
   }
   
   .car-para {
@@ -42,6 +45,9 @@
     &:active {
       box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
     }
+    @include respond(tab-port) {
+      margin: auto;
+    }
   }
   
   .title-icon {
@@ -60,4 +66,8 @@
     @include respond(tab-lan) {
       width: 955px;
     }   
+    @include respond(tab-port) {
+      width: unset; 
+      text-align: center;
+    }
   }

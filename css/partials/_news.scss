@@ -21,6 +21,9 @@
     @include respond(tab-lan) {
       width: 955px;
     }
+    @include respond(tab-port) {
+      width: 730px;
+    }
   }
 
 .news-blocks-inner {
@@ -45,6 +48,9 @@
       @include respond(desktop) {
         width:calc(50% - 20px);
       }  
+      @include respond(tab-port) {
+        width:calc(50% - 10px)
+      }
     }
 
 .news-main-images {

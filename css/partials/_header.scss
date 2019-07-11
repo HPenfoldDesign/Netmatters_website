@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: "poppins", sans-serif;
   }
@@ -26,6 +30,9 @@ body {
     @include respond(tab-lan) {
       width: 955px;
     }  
+    @include respond(tab-port) {
+      width: 730px;
+    }
   }
 
   .head-btns {
@@ -35,6 +42,9 @@ body {
     border-radius: 3px;
     border: none;
     text-decoration: none;
+    @include respond(tab-port) {
+      display:none;
+    }
   }
   
   .head-icons {

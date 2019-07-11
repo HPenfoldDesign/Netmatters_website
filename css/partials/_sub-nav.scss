@@ -24,30 +24,20 @@ $nav-and-subnav: (
   position: absolute;
   visibility: hidden;
   text-align: left;
-  width: 100%; 
   font-size: 15px;
   display: flex;
   list-style-type: none;
   left: 0; 
-  padding: 0;
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: inherit;
-    height: 47px;
-    left: 100%; //temp fix
-    width: 29.3%;  //temp fix from ross
+  padding: 0; 
+  width: 100%;
+  padding-left: 18.5%;
+  @include respond(desktop) {
+  padding-left: 10%;
   }  
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: inherit;
-    height: 47px;
-    right: 100%; //temp fix
-    width: 100%; //temp fix
-  } 
+  @include respond(tab-lan) {
+    padding-left: 3%;
+    } 
 }
-
 
 .nav-and-subnav {
   flex: 1;

@@ -34,6 +34,10 @@
       @include respond(tab-lan) {
         width: 955px;
       }
+      @include respond(tab-port) {
+        width: 730px;
+        overflow: hidden;  
+      }  
   }
 
   .footer-cu, 

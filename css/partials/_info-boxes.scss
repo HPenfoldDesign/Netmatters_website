@@ -10,6 +10,9 @@
     @include respond(tab-lan) {
       width: 955px;
     } 
+    @include respond(tab-port) {
+      width: 730px;
+    }
   }
   
   .wd-info-box,
@@ -22,7 +25,13 @@
     text-align: center;
     border-radius: 3px;
     box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
-    background-color: #fff;  
+    background-color: #fff; 
+    @include respond(tab-port) {
+      max-width:calc(50% - 10px);
+    } 
+    @include respond(tab-port) {
+      margin-bottom: 15px;
+    } 
   }
 
   .ts-info-box,
@@ -36,15 +45,18 @@
     border-radius: 3px;
     box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
     background-color: #fff; 
-    @include respond(desktop) {
-      max-width:calc(50% - 20px);
-    }  
+    @include respond(tab-port) {
+      max-width:calc(50% - 10px);
+    } 
   }
   
   .ts-info-box,
   .bs-info-box {
     @include respond(desktop) {
       margin-bottom: 36px;
+    } 
+    @include respond(tab-port) {
+      margin-bottom: 15px;
     } 
   }
   

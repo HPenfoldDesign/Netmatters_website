@@ -1,5 +1,5 @@
 .portfolio-brands {
-    box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2);
   }
   
   .brand-hover {
@@ -7,24 +7,16 @@
   }
   
   .clr-brands {
-    padding-top: 50px;
-    padding-bottom: 50px;
     display: flex;
-    width: 1200px;
+    padding: 50px 0;
+    justify-content: space-between;
     margin: auto;
-    justify-content: space-around;
-    img {
+    img {  
         filter: grayscale(100%);
         &:hover {
-            filter: grayscale(0);
-            @include respond(desktop) {
-              width: 100%;
-            }  
-        }      
-      } 
-      @include respond(desktop) {
-        width: 975px;
-      }  
+            filter: grayscale(0);  
+        } 
+      }            
     }
   
   .hover-tool-tip {
