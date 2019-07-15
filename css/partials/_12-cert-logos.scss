@@ -10,7 +10,10 @@
     }  
     @include respond(tab-lan) {
       width: 955px; 
-    }
+    } 
+    @include respond(half-break) {
+      width: 730px;  
+    }  
     @include respond(tab-port) {
       width: 730px; 
     }

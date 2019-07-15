@@ -19,10 +19,8 @@
       width: 975px;
     }  
     @include respond(tab-lan) {
-      width: 955px;
-    }
-    @include respond(tab-port) {
-      width: 730px;
+      width: 100%; 
+      padding: 0 25px;
     }
   }
 
@@ -44,13 +42,16 @@
         font-size: 1rem;
         margin: 15px 15px 0px 22px;
         font-size: 0.9em;
-      }    
-      @include respond(desktop) {
-        width:calc(50% - 20px);
       }  
-      @include respond(tab-port) {
-        width:calc(50% - 10px)
+  @include respond(desktop) {
+      width:calc(50% - 20px);
       }
+  @include respond(half-break) {
+    width:calc(50% - 10px)
+  }     
+  @include respond(tab-port) {
+      width:calc(50% - 10px)
+      }    
     }
 
 .news-main-images {

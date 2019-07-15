@@ -12,16 +12,20 @@
   .desc-box {
     width: 1200px;
     margin: auto;
-    color: $white; 
-    @include respond(desktop) {
-      width: 975px;
-    }  
-    @include respond(tab-lan) {
-      width: 955px;
+    color: $white;
+    overflow: hidden;
+    @include respond(desktop) { 
+      max-width: 975px;
     } 
-    @include respond(tab-port) {
-      width: 730px;
+    @include respond(tab-lan) { 
+      max-width: 955px;
     }
+    @include respond(half-break) {
+      max-width: 730px; 
+    }       
+    @include respond(tab-port) { 
+      max-width: 730px;
+    }   
   }
   
   .desc-box-header {
@@ -29,7 +33,10 @@
     font-size: 2.25rem;
     font-weight: 400;
     margin: 30px 0 25px 0;
-    max-width: 50%;
+    width: 50%;
+    @include respond(tab-lan) {
+      width: unset;
+    } 
   }
   
   .desc-box p:nth-of-type(1) { //focuses first sentence
@@ -39,7 +46,8 @@
     margin-bottom: 25px;
     max-width: 50%;
     @include respond(tab-lan) {
-      max-width: 100%;
+      max-width: 80%;
+      overflow: hidden;
     } 
   }
   
@@ -50,7 +58,7 @@
     margin-bottom: 25px;
     max-width: 50%;
     @include respond(tab-lan) {
-      max-width: 100%;
+      overflow: hidden;
     } 
   }
   

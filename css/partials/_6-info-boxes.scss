@@ -10,6 +10,9 @@
     @include respond(tab-lan) {
       width: 955px;
     } 
+    @include respond(half-break) {
+      width: 730px;
+    }
     @include respond(tab-port) {
       width: 730px;
     }
@@ -29,8 +32,12 @@
     @include respond(tab-port) {
       max-width:calc(50% - 10px);
     } 
+    @include respond(half-break) {
+      max-width:calc(50% - 10px);
+      margin-bottom: 20px;
+    }
     @include respond(tab-port) {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     } 
   }
 
@@ -47,17 +54,20 @@
     background-color: #fff; 
     @include respond(tab-port) {
       max-width:calc(50% - 10px);
-    } 
+    }  
+    @include respond(half-break) {
+      max-width:calc(50% - 10px);
+    }
   }
-  
+
   .ts-info-box,
   .bs-info-box {
-    @include respond(desktop) {
-      margin-bottom: 36px;
-    } 
     @include respond(tab-port) {
-      margin-bottom: 15px;
-    } 
+      margin-bottom: 20px;
+    }
+    @include respond(half-break) {
+      margin-bottom: 20px;
+    }  
   }
   
   .box-title {

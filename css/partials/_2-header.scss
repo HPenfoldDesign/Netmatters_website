@@ -29,9 +29,15 @@ body {
     }   
     @include respond(tab-lan) {
       width: 955px;
-    }  
+    }
+    @include respond(half-break) {
+      width: 730px;
+      }  
     @include respond(tab-port) {
       width: 730px;
+    }
+    @include respond(mob) {
+      width: 500px;
     }
   }
 
@@ -45,7 +51,10 @@ body {
     @include respond(tab-port) {
       display:none;
     }
-  }
+    @include respond(half-break) {
+      display:none; 
+      }
+    }
   
   .head-icons {
     padding-right: 10px;

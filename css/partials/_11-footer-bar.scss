@@ -34,6 +34,9 @@
       @include respond(tab-lan) {
         width: 955px;
       }
+      @include respond(half-break) {
+        width: 730px; 
+      }  
       @include respond(tab-port) {
         width: 730px;
         overflow: hidden;  
@@ -43,11 +46,13 @@
   .footer-cu, 
   .footer-an, 
   .footer-web, 
-  .footer-sm {
+  .footer-sm-all {
     @include respond(desktop) {
     width: 50%; 
     }
   } 
+
+
 
   .in-footer {
     @include respond(desktop) {
@@ -57,13 +62,17 @@
   
   /*------footer-social media------*/
   
+  .footer-sm-all{
+    max-width: 100%;
+  }
+  
   .sm-footer {
     display: inline-block;
     background-color: #000215;
     text-align: center;
     padding: 10px 30px;
     font-size: 1.7rem;
-    width: 22%;
+    width: 40%;
     margin-right: 15px;
     &:last-of-type {
         margin-top: 15px;
