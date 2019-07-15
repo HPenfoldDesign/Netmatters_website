@@ -51,9 +51,6 @@
     @include respond(tab-port) {
       margin: auto;
     }
-    @include respond(half-break) {
-      margin: auto;
-    }
   }
   
   .title-icon {

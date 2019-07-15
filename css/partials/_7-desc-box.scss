@@ -24,7 +24,10 @@
       max-width: 730px; 
     }       
     @include respond(tab-port) { 
-      max-width: 730px;
+      max-width: 100%;
+    }   
+    @include respond(mob) { 
+      padding-left: 5%;
     }   
   }
   
@@ -35,8 +38,9 @@
     margin: 30px 0 25px 0;
     width: 50%;
     @include respond(tab-lan) {
+      max-width: 85%;
       width: unset;
-    } 
+    }
   }
   
   .desc-box p:nth-of-type(1) { //focuses first sentence
@@ -46,7 +50,7 @@
     margin-bottom: 25px;
     max-width: 50%;
     @include respond(tab-lan) {
-      max-width: 80%;
+      max-width: 85%;
       overflow: hidden;
     } 
   }
@@ -58,6 +62,7 @@
     margin-bottom: 25px;
     max-width: 50%;
     @include respond(tab-lan) {
+      max-width: 85%;
       overflow: hidden;
     } 
   }

@@ -15,8 +15,9 @@
       width: 730px;  
     }  
     @include respond(tab-port) {
-      width: 730px; 
+      display: none;
     }
+
   }
   
   .bw-to-clr {

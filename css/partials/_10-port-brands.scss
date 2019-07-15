@@ -1,5 +1,8 @@
 .portfolio-brands {
   box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2);
+  @include respond(mob) {
+    display:none;
+    }
   }
   
   .clr-brands {
@@ -15,16 +18,12 @@
         }
         @include respond(desktop) {
           width: 100%; 
-          }   
-        @include respond(tab-lan) {
-          width: 100%;
-          }  
-        @include respond(tab-port) {
-          width: 100%;
-          } 
+        } 
+        @include respond(mob) {
+          display:none;
+        }  
       }
-  }                
-    
+  }                 
   .brand-hover {
     position: relative;
     padding: 0px 20px;

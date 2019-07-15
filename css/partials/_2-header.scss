@@ -22,6 +22,11 @@ body {
     justify-content: space-between;
     .head-btn-all {
         display: flex;
+        margin-right: 20px;
+        margin-left: 15px;
+      }
+      .nm-logo{
+        max-width: 100%;
       }  
     @include respond(desktop) {
         width: 975px; 
@@ -34,10 +39,10 @@ body {
       width: 730px;
       }  
     @include respond(tab-port) {
-      width: 730px;
+      width: 100%;
     }
     @include respond(mob) {
-      width: 500px;
+      max-width: 90%; 
     }
   }
 
@@ -108,3 +113,4 @@ body {
         padding-top: 5px;
         }
     }
+    

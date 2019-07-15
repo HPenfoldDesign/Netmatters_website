@@ -14,7 +14,7 @@
       width: 730px;
     }
     @include respond(tab-port) {
-      width: 730px;
+      width: 90%;
     }
   }
   
@@ -39,6 +39,11 @@
     @include respond(tab-port) {
       margin-bottom: 20px;
     } 
+    @include respond(mob) {
+      max-width: 100%; 
+      margin: auto;
+      margin-top: 20px;
+    }
   }
 
   .ts-info-box,
@@ -54,9 +59,11 @@
     background-color: #fff; 
     @include respond(tab-port) {
       max-width:calc(50% - 10px);
-    }  
-    @include respond(half-break) {
-      max-width:calc(50% - 10px);
+    } 
+    @include respond(mob) {
+      max-width: 100%; 
+      margin: auto;
+      margin-top: 20px;
     }
   }
 
@@ -64,10 +71,12 @@
   .bs-info-box {
     @include respond(tab-port) {
       margin-bottom: 20px;
+    } 
+    @include respond(mob) {
+      max-width: 100%; 
+      margin: auto;
+      margin-top: 20px;
     }
-    @include respond(half-break) {
-      margin-bottom: 20px;
-    }  
   }
   
   .box-title {

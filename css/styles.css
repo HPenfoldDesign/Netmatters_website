@@ -16,7 +16,11 @@ header {
   margin: auto;
   justify-content: space-between; }
   .head-container .head-btn-all {
-    display: flex; }
+    display: flex;
+    margin-right: 20px;
+    margin-left: 15px; }
+  .head-container .nm-logo {
+    max-width: 100%; }
   @media (max-width: 1200px) {
     .head-container {
       width: 975px;
@@ -29,10 +33,10 @@ header {
       width: 730px; } }
   @media (max-width: 768px) {
     .head-container {
-      width: 730px; } }
+      width: 100%; } }
   @media (max-width: 576px) {
     .head-container {
-      width: 500px; } }
+      max-width: 90%; } }
 
 .head-btns {
   font-size: 1.125rem;
@@ -272,9 +276,6 @@ Below that a similar thing is done on hover for the navigation bar*/
   @media (max-width: 768px) {
     .title-button {
       margin: auto; } }
-  @media (max-width: 991px) and (min-width: 768px) {
-    .title-button {
-      margin: auto; } }
 
 .title-icon {
   padding-left: 20px; }
@@ -317,7 +318,7 @@ Below that a similar thing is done on hover for the navigation bar*/
       width: 730px; } }
   @media (max-width: 768px) {
     .info-box {
-      width: 730px; } }
+      width: 90%; } }
 
 .wd-info-box,
 .is-info-box {
@@ -343,6 +344,12 @@ Below that a similar thing is done on hover for the navigation bar*/
     .wd-info-box,
     .is-info-box {
       margin-bottom: 20px; } }
+  @media (max-width: 576px) {
+    .wd-info-box,
+    .is-info-box {
+      max-width: 100%;
+      margin: auto;
+      margin-top: 20px; } }
 
 .ts-info-box,
 .bs-info-box,
@@ -361,21 +368,25 @@ Below that a similar thing is done on hover for the navigation bar*/
     .dm-info-box,
     .cs-info-box {
       max-width: calc(50% - 10px); } }
-  @media (max-width: 991px) and (min-width: 768px) {
+  @media (max-width: 576px) {
     .ts-info-box,
     .bs-info-box,
     .dm-info-box,
     .cs-info-box {
-      max-width: calc(50% - 10px); } }
+      max-width: 100%;
+      margin: auto;
+      margin-top: 20px; } }
 
 @media (max-width: 768px) {
   .ts-info-box,
   .bs-info-box {
     margin-bottom: 20px; } }
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 576px) {
   .ts-info-box,
   .bs-info-box {
-    margin-bottom: 20px; } }
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20px; } }
 
 .box-title {
   font-size: 1.125rem;
@@ -561,7 +572,10 @@ Below that a similar thing is done on hover for the navigation bar*/
       max-width: 730px; } }
   @media (max-width: 768px) {
     .desc-box {
-      max-width: 730px; } }
+      max-width: 100%; } }
+  @media (max-width: 576px) {
+    .desc-box {
+      padding-left: 5%; } }
 
 .desc-box-header {
   text-transform: uppercase;
@@ -571,6 +585,7 @@ Below that a similar thing is done on hover for the navigation bar*/
   width: 50%; }
   @media (max-width: 992px) {
     .desc-box-header {
+      max-width: 85%;
       width: unset; } }
 
 .desc-box p:nth-of-type(1) {
@@ -581,7 +596,7 @@ Below that a similar thing is done on hover for the navigation bar*/
   max-width: 50%; }
   @media (max-width: 992px) {
     .desc-box p:nth-of-type(1) {
-      max-width: 80%;
+      max-width: 85%;
       overflow: hidden; } }
 
 .desc-box p {
@@ -592,6 +607,7 @@ Below that a similar thing is done on hover for the navigation bar*/
   max-width: 50%; }
   @media (max-width: 992px) {
     .desc-box p {
+      max-width: 85%;
       overflow: hidden; } }
 
 .desc-btn {
@@ -627,15 +643,18 @@ Below that a similar thing is done on hover for the navigation bar*/
       width: 730px; } }
   @media (max-width: 768px) {
     .latest-bar {
-      width: 730px; } }
+      width: 100%; } }
 
 .latest-title-bar {
   letter-spacing: -1px;
   color: #333645;
   font-size: 1.25rem;
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 10px 0;
   display: inline-block; }
+  @media (max-width: 768px) {
+    .latest-title-bar {
+      padding-left: 50%; } }
 
 .latest-title-bar:after {
   content: "";
@@ -645,6 +664,14 @@ Below that a similar thing is done on hover for the navigation bar*/
   right: 0;
   background-color: #333645;
   height: 5px; }
+  @media (max-width: 768px) {
+    .latest-title-bar:after {
+      left: 1.5rem;
+      right: -2.5rem; } }
+  @media (max-width: 576px) {
+    .latest-title-bar:after {
+      left: 2rem;
+      right: -2rem; } }
 
 .latest-title-back {
   position: relative;
@@ -661,6 +688,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   .news-blocks img {
     transition: transform 0.2s ease-in;
     height: auto; }
+    @media (max-width: 576px) {
+      .news-blocks img {
+        margin-right: 20px; } }
   @media (max-width: 1200px) {
     .news-blocks .news-blocks-inner:last-of-type {
       display: none; } }
@@ -671,9 +701,11 @@ Below that a similar thing is done on hover for the navigation bar*/
     .news-blocks {
       width: 100%;
       padding: 0 25px; } }
+  @media (max-width: 576px) {
+    .news-blocks {
+      flex-direction: column; } }
 
 .news-blocks-inner {
-  display: flex;
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -699,6 +731,11 @@ Below that a similar thing is done on hover for the navigation bar*/
   @media (max-width: 768px) {
     .news-blocks-inner {
       width: calc(50% - 10px); } }
+  @media (max-width: 576px) {
+    .news-blocks-inner {
+      width: 100%;
+      margin: auto;
+      margin: 25px 0; } }
 
 .news-main-images {
   display: flex;
@@ -710,6 +747,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   overflow: hidden;
   height: auto;
   object-fit: contain; }
+
+.scale-img {
+  width: 100%; }
 
 .news-main-images:hover img.scale-img {
   transform: scale(1.1, 1.1); }
@@ -769,6 +809,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   align-items: center;
   margin-bottom: 20px;
   margin-left: 20px; }
+  @media (max-width: 576px) {
+    .news-block-credits {
+      width: 50%; } }
 
 .tool-tip {
   position: absolute;
@@ -826,6 +869,9 @@ Below that a similar thing is done on hover for the navigation bar*/
 
 .portfolio-brands {
   box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 576px) {
+    .portfolio-brands {
+      display: none; } }
 
 .clr-brands {
   display: flex;
@@ -840,12 +886,9 @@ Below that a similar thing is done on hover for the navigation bar*/
     @media (max-width: 1200px) {
       .clr-brands img {
         width: 100%; } }
-    @media (max-width: 992px) {
+    @media (max-width: 576px) {
       .clr-brands img {
-        width: 100%; } }
-    @media (max-width: 768px) {
-      .clr-brands img {
-        width: 100%; } }
+        display: none; } }
 
 .brand-hover {
   position: relative;
@@ -891,7 +934,9 @@ Below that a similar thing is done on hover for the navigation bar*/
   visibility: visible; }
 
 .footer-bg {
-  background-color: #333645; }
+  background-color: #333645;
+  width: 100%;
+  display: flex; }
 
 .footer-content {
   display: flex;
@@ -928,13 +973,23 @@ Below that a similar thing is done on hover for the navigation bar*/
     .footer-content {
       width: 730px;
       overflow: hidden; } }
+  @media (max-width: 576px) {
+    .footer-content {
+      width: 100%; } }
 
 @media (max-width: 1200px) {
   .footer-cu,
   .footer-an,
   .footer-web,
   .footer-sm-all {
-    width: 50%; } }
+    width: 50%;
+    padding-left: 5%; } }
+@media (max-width: 576px) {
+  .footer-cu,
+  .footer-an,
+  .footer-web,
+  .footer-sm-all {
+    width: 100%; } }
 
 @media (max-width: 1200px) {
   .in-footer {
@@ -996,7 +1051,7 @@ Below that a similar thing is done on hover for the navigation bar*/
       width: 730px; } }
   @media (max-width: 768px) {
     .cert-logo-box {
-      width: 730px; } }
+      display: none; } }
 
 .bw-to-clr {
   filter: grayscale(100%); }

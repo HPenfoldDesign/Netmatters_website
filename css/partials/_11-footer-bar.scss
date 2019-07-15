@@ -1,5 +1,7 @@
 .footer-bg {
     background-color: #333645;
+    width: 100%;
+    display: flex;
   }
   
   .footer-content {
@@ -41,6 +43,9 @@
         width: 730px;
         overflow: hidden;  
       }  
+      @include respond(mob) {
+        width: 100%;
+      }  
   }
 
   .footer-cu, 
@@ -49,12 +54,14 @@
   .footer-sm-all {
     @include respond(desktop) {
     width: 50%; 
+    padding-left: 5%;
     }
+    @include respond(mob) {
+      width: 100%; 
+      }
   } 
 
-
-
-  .in-footer {
+    .in-footer {
     @include respond(desktop) {
       margin-bottom: 25px;
     } 

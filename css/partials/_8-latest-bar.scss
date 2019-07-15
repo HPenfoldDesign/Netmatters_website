@@ -14,8 +14,8 @@
       width: 730px; 
     }  
     @include respond(tab-port) {
-      width: 730px;
-    }
+      width: 100%;
+    } 
   }
   
   .latest-title-bar {
@@ -23,8 +23,11 @@
     color: #333645;
     font-size: 1.25rem;
     text-transform: uppercase;
-    padding: 20px 0;
+    padding: 10px 0;
     display: inline-block;
+    @include respond(tab-port) {
+      padding-left: 50%;
+    }  
   }
   
   .latest-title-bar:after {
@@ -35,9 +38,17 @@
     right: 0;
     background-color: #333645;
     height: 5px;
+    @include respond(tab-port) {
+      left: 1.5rem; 
+      right: -2.5rem;
+    }
+    @include respond(mob) {
+      left: 2rem; 
+      right: -2rem;
+    }
   }
   
   .latest-title-back {
     position: relative;
-    display: inline-block;
+    display: inline-block; 
   }
