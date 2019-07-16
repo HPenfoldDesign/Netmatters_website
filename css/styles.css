@@ -84,20 +84,20 @@ header {
   width: 60px; }
   .ham-menu-box .hamburger-icon {
     font-size: 2rem;
-    color: #fff; }
+    color: #fff;
+    line-height: 0.5;
+    padding-top: 20%; }
   .ham-menu-box .menu-text {
-    margin: 0;
     font-size: 0.8rem;
     text-transform: uppercase;
     font-family: "poppins", sans-serif;
-    font-weight: 400;
-    padding-top: 5px; }
+    font-weight: 400; }
 
 .nav-background {
   background-color: #333645;
   border-bottom: 0.5px ridge #525252; }
 
-.nav-container > ul {
+.nav-container {
   display: flex;
   background-color: #333645;
   margin: auto;
@@ -107,32 +107,35 @@ header {
   text-transform: uppercase;
   text-align: center;
   padding-left: 0; }
-  .nav-container > ul a {
+  .nav-container li {
+    list-style-type: none; }
+  .nav-container a {
     display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #fff;
     padding: 15px 0px;
     justify-content: center;
     align-items: center; }
-  .nav-container > ul i {
+  .nav-container i {
     font-size: 1.438rem;
-    padding-bottom: 5px; }
-  .nav-container > ul p {
+    padding-bottom: 15px; }
+  .nav-container p {
     margin: 0;
     font-size: 1.125rem; }
-  .nav-container > ul small {
+  .nav-container small {
     font-size: 0.7rem; }
   @media (max-width: 1200px) {
-    .nav-container > ul {
+    .nav-container {
       width: 975px; } }
   @media (max-width: 992px) {
-    .nav-container > ul {
+    .nav-container {
       max-width: 955px; } }
   @media (max-width: 991px) and (min-width: 768px) {
-    .nav-container > ul {
+    .nav-container {
       display: none; } }
   @media (max-width: 768px) {
-    .nav-container > ul {
+    .nav-container {
       display: none; } }
 
 .nav-container a:hover .icon {
@@ -215,7 +218,8 @@ Below that a similar thing is done on hover for the navigation bar*/
   left: 0;
   padding: 0;
   width: 100%;
-  padding-left: 18.5%; }
+  padding-left: 18.5%;
+  margin: 0; }
   @media (max-width: 1200px) {
     .sub-menu {
       padding-left: 10%; } }
@@ -224,7 +228,9 @@ Below that a similar thing is done on hover for the navigation bar*/
       padding-left: 3%; } }
 
 .nav-and-subnav {
-  flex: 1; }
+  flex: 1;
+  margin: 0;
+  padding: 0; }
 
 .nav-and-subnav:hover .sub-menu {
   visibility: visible; }

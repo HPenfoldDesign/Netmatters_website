@@ -30,7 +30,8 @@ $nav-and-subnav: (
   left: 0; 
   padding: 0; 
   width: 100%;
-  padding-left: 18.5%;
+  padding-left: 18.5%; 
+  margin: 0;
   @include respond(desktop) {
   padding-left: 10%;
   }  
@@ -41,6 +42,8 @@ $nav-and-subnav: (
 
 .nav-and-subnav {
   flex: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-and-subnav:hover .sub-menu {
