@@ -236,10 +236,6 @@ Below that a similar thing is done on hover for the navigation bar*/
 .nav-and-subnav:hover .sub-menu {
   visibility: visible; }
 
-.img-carousel img {
-  display: flex;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.71), 80%, transparent); }
-
 .info-box {
   display: flex;
   width: 1200px;
