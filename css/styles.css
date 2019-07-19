@@ -1064,4 +1064,26 @@ Below that a similar thing is done on hover for the navigation bar*/
   .bw-to-clr:hover {
     filter: none; }
 
+.cookie-banner {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .cookie-banner p {
+    align-self: center; }
+
+.cookie-container {
+  color: #fff;
+  justify-content: center;
+  display: flex; }
+  .cookie-container button {
+    background: #4183d7;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    margin: 15px 30px; }
+    .cookie-container button:active {
+      background-color: #2a6ec6; }
+
 /*# sourceMappingURL=styles.css.map */

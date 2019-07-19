@@ -1,0 +1,27 @@
+.cookie-banner {
+    width:100%; 
+    
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.80);
+    p {
+       align-self: center; 
+    } 
+}
+
+.cookie-container {
+    color: $white;
+    justify-content: center;
+    display: flex;
+    button {
+        background: $light-blue;
+        color: $white;
+        padding: 10px; 
+        border-radius: 10px;
+        border:0;
+        margin: 15px 30px;
+        &:active {
+            background-color: $dark-blue;
+        }
+    }
+}
