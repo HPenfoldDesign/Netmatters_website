@@ -32,6 +32,7 @@ $nav-and-subnav: (
   width: 100%;
   padding-left: 18.5%; 
   margin: 0;
+  z-index: 1;
   @include respond(desktop) {
   padding-left: 10%;
   }  
@@ -47,5 +48,5 @@ $nav-and-subnav: (
 }
 
 .nav-and-subnav:hover .sub-menu {
-  visibility: visible;  
+  visibility: visible;
 }

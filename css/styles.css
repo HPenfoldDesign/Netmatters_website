@@ -219,7 +219,8 @@ Below that a similar thing is done on hover for the navigation bar*/
   padding: 0;
   width: 100%;
   padding-left: 18.5%;
-  margin: 0; }
+  margin: 0;
+  z-index: 1; }
   @media (max-width: 1200px) {
     .sub-menu {
       padding-left: 10%; } }
@@ -235,77 +236,9 @@ Below that a similar thing is done on hover for the navigation bar*/
 .nav-and-subnav:hover .sub-menu {
   visibility: visible; }
 
-.img-carousel {
+.img-carousel img {
   display: flex;
-  width: 100%;
-  height: calc(100vh - 200.04px);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.71), 80%, transparent), url("./../img/home-rRnH.jpg");
-  align-content: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.car-title {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 3rem;
-  margin: 0 0 25px; }
-  @media (max-width: 768px) {
-    .car-title {
-      margin: auto; } }
-  @media (max-width: 991px) and (min-width: 768px) {
-    .car-title {
-      margin: auto; } }
-
-.car-para {
-  color: #fff;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
-  padding: 0 0 35px;
-  max-width: 400px; }
-
-.title-button {
-  font-size: 1.063rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 15px 15px;
-  border-radius: 3px;
-  border: none;
-  text-decoration: none;
-  background-color: #926fb1;
-  color: #fff; }
-  .title-button:hover {
-    background-color: #7e57a0; }
-  .title-button:active {
-    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2); }
-  @media (max-width: 768px) {
-    .title-button {
-      margin: auto; } }
-
-.title-icon {
-  padding-left: 20px; }
-
-.car-all-elements {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 1200px;
-  align-items: flex-start; }
-  @media (max-width: 1200px) {
-    .car-all-elements {
-      width: 975px; } }
-  @media (max-width: 992px) {
-    .car-all-elements {
-      width: 955px; } }
-  @media (max-width: 991px) and (min-width: 768px) {
-    .car-all-elements {
-      width: unset;
-      text-align: center; } }
-  @media (max-width: 768px) {
-    .car-all-elements {
-      width: unset;
-      text-align: center; } }
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.71), 80%, transparent); }
 
 .info-box {
   display: flex;

@@ -14,14 +14,16 @@
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
-    />
+    /> 
+    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick.css"/>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
   </head>
 
-  <body> 
+  <body>
     <header>
       <div class="head-container">
         <div class="head-logo">
@@ -176,7 +178,7 @@
         </ul>
       </div>
     </nav>
-    <section>
+    <!-- <section>
       <div class="img-carousel">
         <div class="car-all-elements">
           <h1 class="car-title">web design</h1>
@@ -189,7 +191,20 @@
           ></a>
         </div>
       </div>
-    </section>
+    </section> -->
+    
+    <!--plugin carousel html below-->
+    <div class="slides img-carousel">
+      <div><img src="/img/web-design.jpg"></div>
+      <div><img src="/img/home-is.jpg"></div>
+      <div><img src="/img/home-dm.jpg"></div>
+      <div><img src="/img/telephone-keypad.jpg"></div>
+      <div><img src="/img/analytics.jpg"></div>
+      <div><img src="/img/net-security.jpg"></div>
+    </div>
+
+
+    <!------------------------------>
     <section>
       <div class="info-box">
         <a href="#" class="wd-info-box">
@@ -567,11 +582,12 @@
         </div>
       </div>
     </footer>
-    <div id="1"></div> <!--populates div with cookie-->
-      <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <div id="1"></div><!--populates div with cookie-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-3.4.1.min.js"></script>
+    <!-- plugins go below the code to declare use of jquery -->
+    <script src="/plugins/slick-1.8.1/slick/slick.min.js"></script>
     <script src="JS/cookies.js"></script>
+    <script src ="/JS/calling-carousel.js"></script>
   </body>
 </html>
