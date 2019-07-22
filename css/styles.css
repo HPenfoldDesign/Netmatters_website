@@ -220,7 +220,7 @@ Below that a similar thing is done on hover for the navigation bar*/
   width: 100%;
   padding-left: 18.5%;
   margin: 0;
-  z-index: 1; }
+  z-index: 100; }
   @media (max-width: 1200px) {
     .sub-menu {
       padding-left: 10%; } }
@@ -235,6 +235,107 @@ Below that a similar thing is done on hover for the navigation bar*/
 
 .nav-and-subnav:hover .sub-menu {
   visibility: visible; }
+
+.inner-slide {
+  position: relative; }
+
+.car-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0 0 25px; }
+
+.car-para {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  padding: 0 0 35px;
+  max-width: 400px; }
+
+.car-button {
+  font-size: 1.063rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px 15px;
+  border-radius: 3px;
+  border: none;
+  text-decoration: none;
+  color: #fff; }
+  .car-button:active {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2); }
+
+.car-button-wd {
+  background-color: #926fb1; }
+
+.car-button-wd:hover {
+  background-color: #79539a; }
+
+.car-button-is {
+  background-color: #4183d7; }
+
+.car-button-is:hover {
+  background-color: #286abd; }
+
+.car-button-ts {
+  background-color: #d64541; }
+
+.car-button-ts:hover {
+  background-color: #bc2c28; }
+
+.car-button-bs {
+  background-color: #67809f; }
+
+.car-button-bs:hover {
+  background-color: #526781; }
+
+.car-button-dm {
+  background-color: #2ecc71; }
+
+.car-button-dm:hover {
+  background-color: #25a25a; }
+
+.car-button-cs {
+  background-color: #f62459; }
+
+.car-button-cs:hover {
+  background-color: #de093f; }
+
+.title-icon {
+  padding-left: 20px; }
+
+.car-all-elements {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 18.7%; }
+  @media (max-width: 1200px) {
+    .car-all-elements {
+      padding: 9.5%; } }
+  @media (max-width: 992px) {
+    .car-all-elements {
+      padding: 2.5%; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .car-all-elements {
+      align-items: center;
+      justify-content: center;
+      text-align: center; } }
+  @media (max-width: 768px) {
+    .car-all-elements {
+      align-items: center;
+      justify-content: center;
+      text-align: center; } }
+  @media (max-width: 576px) {
+    .car-all-elements {
+      align-items: center;
+      justify-content: center;
+      text-align: center; } }
 
 .info-box {
   display: flex;

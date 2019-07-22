@@ -1,81 +1,89 @@
-//plugin is handling the css for the carousel.
+    .inner-slide{
+    position: relative;
+  }
 
-// .img-carousel {
-//     display: flex;
-//     width: 100%;
-//     height: calc(100vh - 200.04px);
-//     background: linear-gradient(to right, rgba(0, 0, 0, 0.71), 80%, transparent)
-//     align-content: center;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//   }
+  .car-title {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 0 0 25px;
+  }
   
-//   .car-title {
-//     color: $white;
-//     text-transform: uppercase;
-//     font-weight: 400;
-//     font-size: 3rem;
-//     margin: 0 0 25px;
-//     @include respond(tab-port) {
-//       margin: auto;
-//     } 
-//     @include respond(half-break) {
-//       margin: auto;
-//     }
-//   }
+  .car-para {
+    color: $white;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding: 0 0 35px;
+    max-width: 400px;
+  }
   
-//   .car-para {
-//     color: $white;
-//     font-size: 1.25rem;
-//     line-height: 1.875rem;
-//     padding: 0 0 35px;
-//     max-width: 400px;
-//   }
+  .car-button {
+    font-size: 1.063rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px 15px;
+    border-radius: 3px;
+    border: none;
+    text-decoration: none;
+    color: $white;
+    &:active {
+      box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  $car-btn-clr: (   
+    wd: $purple,
+    is: $light-blue,
+    ts: $light-red,
+    bs: $pale-blue,
+    dm: $light-green,
+    cs: $pink,
+);
+
+@each $class, $color in $car-btn-clr {
+    .car-button-#{$class} {
+        background-color: $color;
+    }
+    .car-button-#{$class}:hover {
+        background-color: darken($color, 10%);
+    }
+}
   
-//   .title-button {
-//     font-size: 1.063rem;
-//     font-weight: 400;
-//     text-transform: uppercase;
-//     padding: 15px 15px;
-//     border-radius: 3px;
-//     border: none;
-//     text-decoration: none;
-//     background-color:$purple;
-//     color: $white;
-//     &:hover {
-//       background-color: $dark-purple;
-//     }
-//     &:active {
-//       box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
-//     }
-//     @include respond(tab-port) {
-//       margin: auto;
-//     }
-//   }
+  .title-icon {
+    padding-left: 20px;
+  }
   
-//   .title-icon {
-//     padding-left: 20px;
-//   }
-  
-//   .car-all-elements {
-//     display: flex;
-//     flex-direction: column;
-//     margin: auto;
-//     width: 1200px;
-//     align-items: flex-start;
-//     @include respond(desktop) {
-//       width: 975px;
-//     } 
-//     @include respond(tab-lan) {
-//       width: 955px;
-//     }   
-//     @include respond(half-break) {
-//       width: unset; 
-//       text-align: center;
-//     }
-//     @include respond(tab-port) {
-//       width: unset; 
-//       text-align: center;
-//     }
-//   }
+  .car-all-elements {
+    display: flex;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 18.7%;  
+    @include respond(desktop) {
+        padding: 9.5%;
+    }
+    @include respond(tab-lan) {
+        padding: 2.5%;
+    }
+    @include respond(half-break) {
+        align-items:center;
+        justify-content: center; 
+        text-align: center;
+        } 
+    @include respond(tab-port) {
+        align-items:center;
+        justify-content: center; 
+        text-align: center;
+        }
+    @include respond(mob) {
+        align-items:center;
+        justify-content: center;
+        text-align: center; 
+    }
+  }

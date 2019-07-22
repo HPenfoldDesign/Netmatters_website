@@ -117,12 +117,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-/* 
-option 2
-.slides, 
-.slick-initialized, 
-.slick-slider, 
-.slick-dotted {
-    z-index: -1;
-} */
