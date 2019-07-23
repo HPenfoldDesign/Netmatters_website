@@ -1124,7 +1124,7 @@ Below that a similar thing is done on hover for the navigation bar*/
 
 .sidebar {
   background-color: #333645;
-  z-index: 20;
+  z-index: 101;
   position: absolute;
   right: -320px;
   top: 0;
