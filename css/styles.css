@@ -1100,7 +1100,8 @@ Below that a similar thing is done on hover for the navigation bar*/
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8); }
   .cookie-banner p {
-    align-self: center; }
+    align-self: center;
+    padding-left: 20px; }
 
 .cookie-container {
   color: #fff;
@@ -1115,5 +1116,24 @@ Below that a similar thing is done on hover for the navigation bar*/
     margin: 15px 30px; }
     .cookie-container button:active {
       background-color: #2a6ec6; }
+    @media (max-width: 576px) {
+      .cookie-container button {
+        margin: 30px 15px; } }
+
+.sidebar {
+  background-color: #333645;
+  z-index: 20;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 350px; }
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  .sidebar a {
+    color: white;
+    text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */
