@@ -100,6 +100,9 @@ body {
         border-radius: 3px;
         height: 60px;
         width: 60px;
+        &:hover {
+          background-color: #191a22;
+        }
         .hamburger-icon {
         font-size: 2rem;
         color: $white;

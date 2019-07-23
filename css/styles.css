@@ -82,6 +82,8 @@ header {
   border-radius: 3px;
   height: 60px;
   width: 60px; }
+  .ham-menu-box:hover {
+    background-color: #191a22; }
   .ham-menu-box .hamburger-icon {
     font-size: 2rem;
     color: #fff;
@@ -1124,16 +1126,44 @@ Below that a similar thing is done on hover for the navigation bar*/
   background-color: #333645;
   z-index: 20;
   position: absolute;
-  right: 0;
+  right: -320px;
   top: 0;
   height: 100vh;
-  width: 350px; }
+  width: 320px;
+  text-transform: uppercase;
+  align-content: center;
+  padding: 0;
+  border: 1px grey solid;
+  transition: all ease-in-out 200ms;
+  -webkit-transition: all ease-in-out 200ms; }
   .sidebar ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding-bottom: 20px; }
+    .sidebar ul:last-of-type {
+      padding-bottom: 0; }
   .sidebar a {
     color: white;
     text-decoration: none; }
+  .sidebar .sidebar-header {
+    font-size: 1.1rem;
+    line-height: 3;
+    display: block;
+    padding-left: 20px;
+    border-bottom: solid 1px #555555; }
+    .sidebar .sidebar-header:hover {
+      background-color: #3d404e; }
+  .sidebar .sidebar-sub-cat {
+    line-height: 3;
+    background-color: #262834;
+    display: block;
+    padding-left: 20px;
+    border: groove 1px #696969;
+    border-left: none;
+    border-top: none; }
+    .sidebar .sidebar-sub-cat:before {
+      content: "\00BB";
+      padding: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -54,14 +54,14 @@
             ><i class="fas fa-paper-plane head-icons"></i>Contact</a
           >
 
-          <button class="ham-menu-box">
+          <button  onclick="toggleMenu()" class="ham-menu-box">
             <i class="fas fa-bars hamburger-icon"
               ><br />
               <span class="menu-text">menu</span>
             </i>
           </button>
 
-          <div class="sidebar">
+  <div class="sidebar">
             <ul>
               <li>
                 <a href="http://www.google.com/" class="sidebar-header"
@@ -69,9 +69,8 @@
                 >
                 <ul>
                   <li>
-                    <a href="#" class="sidebar-sub-cat"
-                      >web development training</a
-                    >
+                    <a href="#" class="sidebar-sub-cat sub-cat-last"
+                      >web development training</a>
                   </li>
                 </ul>
               </li>
@@ -720,13 +719,10 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-3.4.1.min.js"
     ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-3.4.1.min.js"
-    ></script>
     <!-- plugins go below the code to declare use of jquery -->
     <script src="/plugins/slick-1.8.1/slick/slick.min.js"></script>
     <script src="JS/cookies.js"></script>
     <script src="/JS/calling-carousel.js"></script>
+    <script src="/JS/slide-in-menu.js"></script>
   </body>
 </html>
