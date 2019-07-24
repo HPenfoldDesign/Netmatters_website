@@ -1,6 +1,6 @@
 .sidebar {
     background-color:#333645;
-    z-index: 101;
+    z-index: 1000;
     position: absolute;
     right: -320px;
     top: 0;
@@ -47,8 +47,25 @@
         &:before {
             content: "\00BB";
             padding: 10px;
-        }
+        }    
     }
+    @include respond(mob) {
+        width: 290px; 
+    }    
 } 
+
+.overlay {
+    position: fixed;
+    top: 104px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#000, 0.50);
+    z-index: 10;
+    display: none;
+}
+
+
+    
 
 
