@@ -5,10 +5,10 @@
     right: -320px;
     top: 0;
     height: 100vh;
-    width: 320px; 
+    width: 300px; 
     text-transform: uppercase;
     align-content: center;
-    padding: 0; 
+    padding: 0px, 20px, 0px, 0px; 
     border: 1px grey solid;
     transition: all ease-in-out 200ms;
     -webkit-transition: all ease-in-out 200ms;
@@ -29,18 +29,17 @@
         font-size: 1.1rem;
         line-height: 3;
         display: block;
-        padding-left: 20px;
+        padding-left: 10px;
         border-bottom: solid 1px #555555;
         &:hover {
             background-color: #3d404e;
         }
-
     }
     .sidebar-sub-cat {
         line-height: 3;
         background-color: #262834;
         display: block;
-        padding-left: 20px;
+        padding-left: 5px;
         border: groove 1px #696969;
         border-left: none;
         border-top:none;
@@ -49,22 +48,97 @@
             padding: 10px;
         }    
     }
-    @include respond(mob) {
-        width: 290px; 
-    }    
+    @include respond(tab-lan) {
+         overflow-y: scroll;
+    } 
+    .hidden-sidebar {
+        display: none;
+        @include respond(tab-lan) {
+            display: contents;
+       } 
+    .contact-us-sidebar { 
+        border: 2px groove grey;
+        padding: 20px;
+        margin:  20px 20px 10px 20px;
+        border-radius: 3px;
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 0;
+        &:active {
+            background-color: #3d404e;
+        }
+      }
+    .sidebar-logo-link {
+        border: 2px groove grey;
+        padding: 15px 70px;
+        margin: 10px 20px;
+        border-radius: 3px;
+        font-size: 1.3rem;
+        text-align: center;
+        .sidebar-icon {
+            padding-bottom: 8px;
+        }
+        &:active {
+            background-color: #3d404e;
+        }
+    .sidebar-logo-link {
+        border: 2px groove grey;
+        padding: 15px 70px;
+        margin: 10px 20px;
+        border-radius: 3px;
+        font-size: 1.3rem;
+        text-align: center;
+        .sidebar-icon {
+            padding-bottom: 8px;
+        }
+            &:active {
+                background-color: #3d404e;
+            }
+        }
+        
+        .sidebar-mquery-sub {
+            background: #262834;
+            margin: 0px 20px;
+            border-radius: 3px;
+            padding: 5px;
+            text-align: center; 
+            }
+            li {
+                border-bottom: 1px solid #333645;
+                padding: 10px;
+                margin: 1px;
+                &:last-of-type {
+                    border: none;
+                } 
+                &:hover {
+                    background-color: #3d404e; 
+                }
+            }
+        
+        .overlay {
+            position: fixed;
+            top: 104px;
+            right: 0px;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(#000, 0.50);
+            z-index: 10;
+            display: none;
+        } 
+        
+
+    }
+    
+}
+    
+    
+    
+        
 } 
 
-.overlay {
-    position: fixed;
-    top: 104px;
-    right: 0px;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(#000, 0.50);
-    z-index: 10;
-    display: none;
-}
 
+
+//----nesting issue---------------->
 
     
 

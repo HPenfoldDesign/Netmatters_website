@@ -1135,10 +1135,10 @@ Below that a similar thing is done on hover for the navigation bar*/
   right: -320px;
   top: 0;
   height: 100vh;
-  width: 320px;
+  width: 300px;
   text-transform: uppercase;
   align-content: center;
-  padding: 0;
+  padding: 0px, 20px, 0px, 0px;
   border: 1px grey solid;
   transition: all ease-in-out 200ms;
   -webkit-transition: all ease-in-out 200ms; }
@@ -1156,7 +1156,7 @@ Below that a similar thing is done on hover for the navigation bar*/
     font-size: 1.1rem;
     line-height: 3;
     display: block;
-    padding-left: 20px;
+    padding-left: 10px;
     border-bottom: solid 1px #555555; }
     .sidebar .sidebar-header:hover {
       background-color: #3d404e; }
@@ -1164,25 +1164,75 @@ Below that a similar thing is done on hover for the navigation bar*/
     line-height: 3;
     background-color: #262834;
     display: block;
-    padding-left: 20px;
+    padding-left: 5px;
     border: groove 1px #696969;
     border-left: none;
     border-top: none; }
     .sidebar .sidebar-sub-cat:before {
       content: "\00BB";
       padding: 10px; }
-  @media (max-width: 576px) {
+  @media (max-width: 992px) {
     .sidebar {
-      width: 290px; } }
-
-.overlay {
-  position: fixed;
-  top: 104px;
-  right: 0px;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
-  display: none; }
+      overflow-y: scroll; } }
+  .sidebar .hidden-sidebar {
+    display: none; }
+    @media (max-width: 992px) {
+      .sidebar .hidden-sidebar {
+        display: contents; } }
+    .sidebar .hidden-sidebar .contact-us-sidebar {
+      border: 2px groove grey;
+      padding: 20px;
+      margin: 20px 20px 10px 20px;
+      border-radius: 3px;
+      font-size: 1.2rem;
+      text-align: center;
+      line-height: 0; }
+      .sidebar .hidden-sidebar .contact-us-sidebar:active {
+        background-color: #3d404e; }
+    .sidebar .hidden-sidebar .sidebar-logo-link {
+      border: 2px groove grey;
+      padding: 15px 70px;
+      margin: 10px 20px;
+      border-radius: 3px;
+      font-size: 1.3rem;
+      text-align: center; }
+      .sidebar .hidden-sidebar .sidebar-logo-link .sidebar-icon {
+        padding-bottom: 8px; }
+      .sidebar .hidden-sidebar .sidebar-logo-link:active {
+        background-color: #3d404e; }
+      .sidebar .hidden-sidebar .sidebar-logo-link .sidebar-logo-link {
+        border: 2px groove grey;
+        padding: 15px 70px;
+        margin: 10px 20px;
+        border-radius: 3px;
+        font-size: 1.3rem;
+        text-align: center; }
+        .sidebar .hidden-sidebar .sidebar-logo-link .sidebar-logo-link .sidebar-icon {
+          padding-bottom: 8px; }
+        .sidebar .hidden-sidebar .sidebar-logo-link .sidebar-logo-link:active {
+          background-color: #3d404e; }
+      .sidebar .hidden-sidebar .sidebar-logo-link .sidebar-mquery-sub {
+        background: #262834;
+        margin: 0px 20px;
+        border-radius: 3px;
+        padding: 5px;
+        text-align: center; }
+      .sidebar .hidden-sidebar .sidebar-logo-link li {
+        border-bottom: 1px solid #333645;
+        padding: 10px;
+        margin: 1px; }
+        .sidebar .hidden-sidebar .sidebar-logo-link li:last-of-type {
+          border: none; }
+        .sidebar .hidden-sidebar .sidebar-logo-link li:hover {
+          background-color: #3d404e; }
+      .sidebar .hidden-sidebar .sidebar-logo-link .overlay {
+        position: fixed;
+        top: 104px;
+        right: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+        display: none; }
 
 /*# sourceMappingURL=styles.css.map */
