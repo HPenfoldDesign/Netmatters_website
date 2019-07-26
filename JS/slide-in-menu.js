@@ -10,7 +10,7 @@ function toggleMenu() {
     toggleStatus = 0;
   } else if (toggleStatus === 0) {
     // document.getElementById('sidebar').style.right = " -320px";
-    $(".sidebar").css("right", "-320px");
+    $(".sidebar").css("right", "-300px");
     $("header").removeClass("fixed-header");
     $(".overlay").css("display", "none");
   

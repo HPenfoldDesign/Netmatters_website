@@ -1,8 +1,13 @@
 .sidebar {
+    position: fixed;
+
+
+
+
     background-color:#333645;
     z-index: 1000;
-    position: absolute;
-    right: -320px;
+    //position: absolute;
+    right: -300px;
     top: 0;
     height: 100vh;
     width: 300px; 
@@ -34,7 +39,14 @@
         &:hover {
             background-color: #3d404e;
         }
+        @include respond(tab-lan) {
+            &:first-of-type {
+                border-top: solid 2px #555555;
+                margin-top: 20px;
+            }
+        }
     }
+    
     .sidebar-sub-cat {
         line-height: 3;
         background-color: #262834;
@@ -51,11 +63,12 @@
     @include respond(tab-lan) {
          overflow-y: scroll;
     } 
+    
     .hidden-sidebar {
         display: none;
         @include respond(tab-lan) {
             display: contents;
-       } 
+        } 
     .contact-us-sidebar { 
         border: 2px groove grey;
         padding: 20px;
@@ -68,6 +81,7 @@
             background-color: #3d404e;
         }
       }
+
     .sidebar-logo-link {
         border: 2px groove grey;
         padding: 15px 70px;
@@ -80,7 +94,9 @@
         }
         &:active {
             background-color: #3d404e;
-        }
+        } 
+    }
+
     .sidebar-logo-link {
         border: 2px groove grey;
         padding: 15px 70px;
@@ -102,7 +118,6 @@
             border-radius: 3px;
             padding: 5px;
             text-align: center; 
-            }
             li {
                 border-bottom: 1px solid #333645;
                 padding: 10px;
@@ -113,32 +128,28 @@
                 &:hover {
                     background-color: #3d404e; 
                 }
-            }
+            } 
+        }
         
-        .overlay {
-            position: fixed;
-            top: 104px;
-            right: 0px;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(#000, 0.50);
-            z-index: 10;
-            display: none;
-        } 
-        
-
     }
     
 }
     
     
     
-        
-} 
+.overlay {
+    position: fixed;
+    top: 104px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#000, 0.50);
+    z-index: 10;
+    display: none;
+}       
 
 
 
-//----nesting issue---------------->
 
     
 

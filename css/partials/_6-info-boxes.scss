@@ -57,6 +57,9 @@
     border-radius: 3px;
     box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
     background-color: #fff; 
+    @include respond(half-break) {
+      max-width:calc(50% - 10px);
+    }
     @include respond(tab-port) {
       max-width:calc(50% - 10px);
     } 
@@ -69,6 +72,9 @@
 
   .ts-info-box,
   .bs-info-box {
+    @include respond(half-break) {
+      margin-bottom: 20px;
+    }
     @include respond(tab-port) {
       margin-bottom: 20px;
     } 

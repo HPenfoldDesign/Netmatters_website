@@ -226,7 +226,7 @@ Below that a similar thing is done on hover for the navigation bar*/
   left: 0;
   padding: 0;
   width: 100%;
-  padding-left: 18.5%;
+  padding-left: 22%;
   margin: 0;
   z-index: 100; }
   @media (max-width: 1200px) {
@@ -322,7 +322,7 @@ Below that a similar thing is done on hover for the navigation bar*/
   width: 100%;
   align-items: flex-start;
   justify-content: center;
-  padding: 18.7%; }
+  padding: 22%; }
   @media (max-width: 1200px) {
     .car-all-elements {
       padding: 9.5%; } }
@@ -344,6 +344,12 @@ Below that a similar thing is done on hover for the navigation bar*/
       align-items: center;
       justify-content: center;
       text-align: center; } }
+
+.slick-slide img {
+  width: 100%; }
+  @media (max-width: 1200px) {
+    .slick-slide img {
+      width: auto; } }
 
 .info-box {
   display: flex;
@@ -406,6 +412,12 @@ Below that a similar thing is done on hover for the navigation bar*/
   border-radius: 3px;
   box-shadow: 0px 3px 350px rgba(0, 0, 0, 0.1);
   background-color: #fff; }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .ts-info-box,
+    .bs-info-box,
+    .dm-info-box,
+    .cs-info-box {
+      max-width: calc(50% - 10px); } }
   @media (max-width: 768px) {
     .ts-info-box,
     .bs-info-box,
@@ -421,6 +433,10 @@ Below that a similar thing is done on hover for the navigation bar*/
       margin: auto;
       margin-top: 20px; } }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  .ts-info-box,
+  .bs-info-box {
+    margin-bottom: 20px; } }
 @media (max-width: 768px) {
   .ts-info-box,
   .bs-info-box {
@@ -1129,10 +1145,10 @@ Below that a similar thing is done on hover for the navigation bar*/
         margin: 30px 15px; } }
 
 .sidebar {
+  position: fixed;
   background-color: #333645;
   z-index: 1000;
-  position: absolute;
-  right: -320px;
+  right: -300px;
   top: 0;
   height: 100vh;
   width: 300px;
@@ -1160,6 +1176,10 @@ Below that a similar thing is done on hover for the navigation bar*/
     border-bottom: solid 1px #555555; }
     .sidebar .sidebar-header:hover {
       background-color: #3d404e; }
+    @media (max-width: 992px) {
+      .sidebar .sidebar-header:first-of-type {
+        border-top: solid 2px #555555;
+        margin-top: 20px; } }
   .sidebar .sidebar-sub-cat {
     line-height: 3;
     background-color: #262834;
@@ -1200,39 +1220,40 @@ Below that a similar thing is done on hover for the navigation bar*/
         padding-bottom: 8px; }
       .sidebar .hidden-sidebar .sidebar-logo-link:active {
         background-color: #3d404e; }
-      .sidebar .hidden-sidebar .sidebar-logo-link .sidebar-logo-link {
-        border: 2px groove grey;
-        padding: 15px 70px;
-        margin: 10px 20px;
-        border-radius: 3px;
-        font-size: 1.3rem;
-        text-align: center; }
-        .sidebar .hidden-sidebar .sidebar-logo-link .sidebar-logo-link .sidebar-icon {
-          padding-bottom: 8px; }
-        .sidebar .hidden-sidebar .sidebar-logo-link .sidebar-logo-link:active {
-          background-color: #3d404e; }
-      .sidebar .hidden-sidebar .sidebar-logo-link .sidebar-mquery-sub {
-        background: #262834;
-        margin: 0px 20px;
-        border-radius: 3px;
-        padding: 5px;
-        text-align: center; }
-      .sidebar .hidden-sidebar .sidebar-logo-link li {
+    .sidebar .hidden-sidebar .sidebar-logo-link {
+      border: 2px groove grey;
+      padding: 15px 70px;
+      margin: 10px 20px;
+      border-radius: 3px;
+      font-size: 1.3rem;
+      text-align: center; }
+      .sidebar .hidden-sidebar .sidebar-logo-link .sidebar-icon {
+        padding-bottom: 8px; }
+      .sidebar .hidden-sidebar .sidebar-logo-link:active {
+        background-color: #3d404e; }
+    .sidebar .hidden-sidebar .sidebar-mquery-sub {
+      background: #262834;
+      margin: 0px 20px;
+      border-radius: 3px;
+      padding: 5px;
+      text-align: center; }
+      .sidebar .hidden-sidebar .sidebar-mquery-sub li {
         border-bottom: 1px solid #333645;
         padding: 10px;
         margin: 1px; }
-        .sidebar .hidden-sidebar .sidebar-logo-link li:last-of-type {
+        .sidebar .hidden-sidebar .sidebar-mquery-sub li:last-of-type {
           border: none; }
-        .sidebar .hidden-sidebar .sidebar-logo-link li:hover {
+        .sidebar .hidden-sidebar .sidebar-mquery-sub li:hover {
           background-color: #3d404e; }
-      .sidebar .hidden-sidebar .sidebar-logo-link .overlay {
-        position: fixed;
-        top: 104px;
-        right: 0px;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 10;
-        display: none; }
+
+.overlay {
+  position: fixed;
+  top: 104px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none; }
 
 /*# sourceMappingURL=styles.css.map */

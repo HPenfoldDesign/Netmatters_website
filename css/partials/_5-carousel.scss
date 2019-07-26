@@ -1,6 +1,6 @@
     .inner-slide{
     position: relative;
-  }
+    }
 
   .car-title {
     color: $white;
@@ -64,7 +64,7 @@
     width: 100%;
     align-items: flex-start;
     justify-content: center;
-    padding: 18.7%;  
+    padding: 22%;  
     @include respond(desktop) {
         padding: 9.5%;
     }
@@ -87,3 +87,11 @@
         text-align: center; 
     }
   }
+
+
+.slick-slide img{
+  width: 100%;
+  @include respond(desktop) {
+   width: auto;
+  }
+}
